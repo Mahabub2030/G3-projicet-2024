@@ -6,6 +6,34 @@
         font-family: "Work Sans", sans-serif;
 }
 
+.disply-flex {
+        display: flex;
+}
+.text-gray{
+        color: #424242;
+
+}
+.text-light-gray{
+     color:#727272 ;   
+}
+.bg-light{
+        background-color: rgba(255, 144, 14, 0.1);
+}
+.nav_bar{
+        justify-content: space-between;
+        padding: 20px;
+}
+
+.nav_item {
+        margin-right: 30px;
+        color: rgb(66, 66, 66);
+        font-weight: 500;
+        text-align: center;
+}
+.nav_bar, .banner{
+        max-width: 1440px;
+        margin: 0 auto;
+}
 
 
 /* responsive start here */
