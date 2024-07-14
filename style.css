@@ -41,8 +41,13 @@ main{
 main > section{
         margin-top: 130px;
 }
+.section_title{
+        font-size: 2.8rem;
+        font-weight: 700;
+
+}
 .text_primary{
-        color: rgb(255, 144, 14);;
+        color: rgb(255, 144, 14);
 }
 .nav_bar {
         justify-content: space-between;
@@ -106,9 +111,7 @@ main > section{
         margin-left: 120px;
         max-width: 530px;
 }
-.feture_title{
-        font-size: 2.8rem;
-}
+
 .feture_descrition{
         font-size: 16px;
         font-weight: 400;
@@ -119,6 +122,36 @@ main > section{
 }
 
 /* tems end here */
+
+/* fact styling start here */
+.facts_contianer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+}
+.fac_discrition{
+        max-width: 540px;
+}
+.fact_card{
+        border: 2px solid  rgb(255, 144, 14);
+        width: 240px;
+        height: 240px;
+        border-radius: 8px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+}
+.fact_number{
+        font-size: 2.8rem;
+        font-weight: 600;
+        margin-top: 5px;
+        margin-bottom: 10px;
+}
+.fact_name{
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 10px;
+}
+/* fact styling end here */
 
 
 /* responsive start here */
@@ -132,12 +165,17 @@ main > section{
         .tems_section{
                 flex-direction: column;
         }
-        .temis_contener{
-                grid-template-columns: repeat(1, 1fr);
+        .temis_contener, .facts_contianer{
+                grid-template-columns: 1fr;
+        }
+        .facts_contianer{
+                justify-items: center;
+               gap: 24px;
         }
         .oure_futer{
                 margin-left: 20px;
         }
+       
        
 }
 
