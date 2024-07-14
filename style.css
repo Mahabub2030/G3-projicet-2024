@@ -22,6 +22,11 @@
 .nav_bar{
         justify-content: space-between;
         padding: 20px;
+        align-items: center;
+}
+.brand{
+        font-size: 45px;
+        font-weight: 700;
 }
 
 .nav_item {
@@ -34,6 +39,18 @@
         max-width: 1440px;
         margin: 0 auto;
 }
+.banner-content{
+        max-width: 850px;
+        margin: 0 auto;
+        text-align: center;
+
+}
+.banner-title{
+        font-weight: 700;
+        font-size: 4rem;
+}
+
+/* banner styling end here */
 
 
 /* responsive start here */
