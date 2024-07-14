@@ -33,7 +33,17 @@
         border-radius: 8px;
         border: none;
 }
+main{
+        max-width: 1440px;
+        margin: 0 auto;
+}
 
+main > section{
+        margin-top: 130px;
+}
+.text_primary{
+        color: rgb(255, 144, 14);;
+}
 .nav_bar {
         justify-content: space-between;
         padding: 20px;
@@ -83,6 +93,33 @@
 
 /* banner styling end here */
 
+/* tems start here */
+.tems_section{
+        align-items: center;
+}
+.temis_contener{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+}
+.oure_futer{
+        margin-left: 120px;
+        max-width: 530px;
+}
+.feture_title{
+        font-size: 2.8rem;
+}
+.feture_descrition{
+        font-size: 16px;
+        font-weight: 400;
+}
+
+#quicq_list{
+        font-weight: 500;
+}
+
+/* tems end here */
+
 
 /* responsive start here */
 
@@ -92,6 +129,27 @@
                 flex-direction: column;
                 gap: 20px;
         }
+        .tems_section{
+                flex-direction: column;
+        }
+        .temis_contener{
+                grid-template-columns: repeat(1, 1fr);
+        }
+        .oure_futer{
+                margin-left: 20px;
+        }
+       
+}
+
+/* medium device */
+@media screen  and (min-width: 576px) and (max-width: 992px) {
+        .tems_section{
+                flex-direction: column;
+        }
+        .oure_futer{
+                margin-left: 50px auto;
+        }
+        
         
 }
 
