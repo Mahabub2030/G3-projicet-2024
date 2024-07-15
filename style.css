@@ -152,6 +152,25 @@ main > section{
         margin-top: 10px;
 }
 /* fact styling end here */
+.sopse_title{
+        font-weight: 800;
+        font-size: 45px;
+}
+.sponser_info{
+        max-width: 542px;
+        margin: 50px auto;
+        text-align: center;
+}
+
+.sponer_conteiner{
+        display: grid;
+        grid-template-columns: repeat(5 ,1fr);
+}
+.sponer_conteiner img{
+        filter: grayscale(100%);
+
+}
+
 
 
 /* responsive start here */
@@ -165,12 +184,16 @@ main > section{
         .tems_section{
                 flex-direction: column;
         }
-        .temis_contener, .facts_contianer{
+        .temis_contener, .facts_contianer, .sponer_conteiner{
                 grid-template-columns: 1fr;
         }
-        .facts_contianer{
+        .facts_contianer, .sponer_conteiner{
                 justify-items: center;
                gap: 24px;
+        }
+        .sponer_conteiner{
+                justify-items: center;
+                gap: 50px;
         }
         .oure_futer{
                 margin-left: 20px;
@@ -186,6 +209,11 @@ main > section{
         }
         .oure_futer{
                 margin-left: 50px auto;
+        }
+        .sponer_conteiner, .facts_contianer{
+                grid-template-columns: repeat(2, 1fr);
+                gap: 50px;
+                justify-items: center;
         }
         
         
