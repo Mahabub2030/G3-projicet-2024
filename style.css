@@ -33,22 +33,26 @@
         border-radius: 8px;
         border: none;
 }
-main{
+
+main {
         max-width: 1440px;
         margin: 0 auto;
 }
 
-main > section{
+main>section {
         margin-top: 130px;
 }
-.section_title{
+
+.section_title {
         font-size: 2.8rem;
         font-weight: 700;
 
 }
-.text_primary{
+
+.text_primary {
         color: rgb(255, 144, 14);
 }
+
 .nav_bar {
         justify-content: space-between;
         padding: 20px;
@@ -80,7 +84,8 @@ main > section{
         margin-bottom: 50px;
 
 }
-.banner-imgs{
+
+.banner-imgs {
         width: 100%;
 }
 
@@ -99,40 +104,90 @@ main > section{
 /* banner styling end here */
 
 /* tems start here */
-.tems_section{
+.tems_section {
         align-items: center;
 }
-.temis_contener{
+
+.temis_contener {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
 }
-.oure_futer{
+
+.oure_futer {
         margin-left: 120px;
         max-width: 530px;
 }
 
-.feture_descrition{
+.feture_descrition {
         font-size: 16px;
         font-weight: 400;
 }
 
-#quicq_list{
+#quicq_list {
         font-weight: 500;
 }
 
 /* tems end here */
 
+.feature_title {
+        color: rgb(19, 19, 19);
+        font-family: Work Sans;
+        font-size: 45px;
+        font-weight: 700;
+}
+
+.feature_discrition {
+        color: rgb(114, 114, 114);
+        font-family: Work Sans;
+        font-size: 16px;
+        font-weight: 400;
+}
+
+/* our feature section start here */
+.feature_seciton {
+        gap: 140px;
+
+}
+
+#feature_Section_title {
+        border-left: 5px solid rgb(255, 144, 14);
+        padding-left: 20px;
+}
+
+.feature_img_title {
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+}
+
+.feature_card {
+        padding: 30px;
+        border-radius: 8px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+        background: rgb(255, 255, 255);
+        margin-bottom: 30px;
+
+}
+
+/* our feature section ends here */
+
+
 /* fact styling start here */
-.facts_contianer{
+.facts_contianer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
 }
-.fac_discrition{
+
+.fac_discrition {
         max-width: 540px;
 }
-.fact_card{
-        border: 2px solid  rgb(255, 144, 14);
+
+.fact_card {
+        border: 2px solid rgb(255, 144, 14);
         width: 240px;
         height: 240px;
         border-radius: 8px;
@@ -140,36 +195,42 @@ main > section{
         justify-content: center;
         align-items: center;
 }
-.fact_number{
+
+.fact_number {
         font-size: 2.8rem;
         font-weight: 600;
         margin-top: 5px;
         margin-bottom: 10px;
 }
-.fact_name{
+
+.fact_name {
         font-size: 1.25rem;
         font-weight: 600;
         margin-top: 10px;
 }
+
 /* fact styling end here */
-.sopse_title{
+.sopse_title {
         font-weight: 800;
         font-size: 45px;
 }
-.sponser_info{
+
+.sponser_info {
         max-width: 542px;
         margin: 50px auto;
         text-align: center;
 }
 
-.sponer_conteiner{
+.sponer_conteiner {
         display: grid;
-        grid-template-columns: repeat(5 ,1fr);
+        grid-template-columns: repeat(5, 1fr);
 }
-.sponer_conteiner img{
+
+.sponer_conteiner img {
         filter: grayscale(100%);
 
 }
+
 
 
 
@@ -177,48 +238,59 @@ main > section{
 
 /* bannse section responsive  start here */
 @media screen and (max-width:576px) {
-        .nav_bar, .nav_link{
+
+        .nav_bar,
+        .nav_link {
                 flex-direction: column;
                 gap: 20px;
         }
-        .tems_section{
+
+        .tems_section {
                 flex-direction: column;
         }
-        .temis_contener, .facts_contianer, .sponer_conteiner{
+
+        .temis_contener,
+        .facts_contianer,
+        .sponer_conteiner {
                 grid-template-columns: 1fr;
         }
-        .facts_contianer, .sponer_conteiner{
+
+        .facts_contianer,
+        .sponer_conteiner {
                 justify-items: center;
-               gap: 24px;
+                gap: 24px;
         }
-        .sponer_conteiner{
+
+        .sponer_conteiner {
                 justify-items: center;
                 gap: 50px;
         }
-        .oure_futer{
+
+        .oure_futer {
                 margin-left: 20px;
         }
-       
-       
+
+
 }
 
 /* medium device */
-@media screen  and (min-width: 576px) and (max-width: 992px) {
-        .tems_section{
+@media screen and (min-width: 576px) and (max-width: 992px) {
+        .tems_section {
                 flex-direction: column;
         }
-        .oure_futer{
+
+        .oure_futer {
                 margin-left: 50px auto;
         }
-        .sponer_conteiner, .facts_contianer{
+
+        .sponer_conteiner,
+        .facts_contianer {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 50px;
                 justify-items: center;
         }
-        
-        
-}
 
+}
 
 /* bannse section responsive  ends here */
 
